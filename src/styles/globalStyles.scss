@@ -1,0 +1,28 @@
+@import './variables.scss';
+@import './fonts/fonts.scss';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: $ff-prime, sans-serif;
+    font-weight: $fw-light;
+    font-size: $fz-s;
+    background-color: $clr-bg;
+    color: $clr-text;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
