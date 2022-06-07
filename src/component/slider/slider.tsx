@@ -2,9 +2,7 @@ import { FC, useState } from 'react';
 import { ISliderProps } from './slider.props';
 import styles from './slider.module.scss';
 import cn from 'classnames';
-import { ReactComponent as Arrow } from './icons/arrow.svg';
-
-const fadeDuration = 300
+import { ReactComponent as Arrow } from '../../assets/icons/slider/arrow.svg';
 
 export const Slider = ({ movies }: ISliderProps) => {
     const [slide, setSlide] = useState<number>(0);
