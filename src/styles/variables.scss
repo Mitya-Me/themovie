@@ -1,9 +1,10 @@
 $ff-prime: 'FuturaF', sans-serif;
 
-$fz-s: 17px;
-$fz-m: 19px;
-$fz-l: 22px;
-$fz-xl: 40px;
+$fz-xs: 14px;
+$fz-s: 18px;
+$fz-m: 20px;
+$fz-l: 24px;
+$fz-xl: 32px;
 $fz-bigger: 64px;
 
 $fw-light: 300;
@@ -16,7 +17,8 @@ $lh-l: 22px;
 $lh-xl: 48px;
 $lh-bigger: 78px;
 
-$clr-text: #ffffff;
-$clr-bg: #000000;
+$clr-white: #ffffff;
+$clr-black: #000000;
 $clr-grey: #919191;
 $clr-grey-dark: #252525;
+$clr-gradient-slider: linear-gradient(to right, rgba(rgb(46, 46, 46), .01), rgba(rgb(0, 0, 0), .65) 20%);
