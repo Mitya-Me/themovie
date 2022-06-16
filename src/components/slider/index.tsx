@@ -3,6 +3,7 @@ import { ISliderProps } from "./slider.props";
 import styles from "./slider.module.scss";
 import cn from "classnames";
 import { ReactComponent as Arrow } from "../../assets/icons/slider/arrow.svg";
+import { UIButton } from "../../ui/uiButton";
 
 export const Slider = ({ movies }: ISliderProps) => {
     const [slide, setSlide] = useState<number>(0);
@@ -24,12 +25,14 @@ export const Slider = ({ movies }: ISliderProps) => {
         <div className={styles.slider}>
             <div className={cn(styles.slide, styles[fadeState])}>
                 <div className={styles.slide__text}>
-                    <div className={styles.slide__text_title}>{movies[slide].title}</div>
-                    <div className={styles.slide__text_genre}>{movies[slide].genre}</div>
-                    <div className={styles.slide__text_description}>
-                        {movies[slide].description}
+                    <div className={styles.slide__text_wrapper}>
+                        <div className={styles.slide__text_title}>{movies[slide].title}</div>
+                        <div className={styles.slide__text_genre}>{movies[slide].genre}</div>
+                        <div className={styles.slide__text_description}>
+                            {movies[slide].description}
+                        </div>
+                        <UIButton text='find out more'/>
                     </div>
-                    <button className={styles.slide__btn}> Find out more </button>
                 </div>
                 <div
                     className={styles.slide__img}
