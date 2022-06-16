@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.button {
+    text-transform: uppercase;
+    font-size: $fz-xs;
+    padding: 15px;
+    border: 1px solid $clr-white;
+    transition: $transition;
+
+    &:hover {
+        background: $clr-white;
+        color: $clr-black;
+    }
+}
