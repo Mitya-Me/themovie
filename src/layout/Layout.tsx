@@ -1,7 +1,7 @@
 import { ILayoutProps } from "./layout.props"
 import styles from './layout.module.scss'
-import { Footer } from "./footer/Footer"
-import { Header } from "./header/Header"
+import { Footer } from "./footer"
+import { Header } from "./header"
 
 export const Layout = ( { children }:ILayoutProps) => { 
 
