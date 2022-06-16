@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__gif {
+        height: 500px;
+        width: 40%;
+        background-image: url('../../assets/gifs/404notFound.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: $fz-xl;
+        font-weight: $fw-bold;
+        padding: 2% 0;
+    }
+
+    &__btns {
+        display: flex;
+    }
+}
