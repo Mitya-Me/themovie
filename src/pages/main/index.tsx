@@ -3,6 +3,7 @@ import image from '../../assets/images/slider/test_img.webp'
 import test_image from '../../assets/images/slider/1917_test_movie_poster.jpg'
 import test_image2 from '../../assets/images/slider/little_woman_test_movie_poster.jpg'
 import test_image3 from '../../assets/images/slider/starwarsriseofskywalker_test_movie_poster.jpg'
+import { CinemaHall } from "../../components/cinemaHall"
 
 
 export const MainPage = () => { 
@@ -16,6 +17,7 @@ export const MainPage = () => {
                 {id: 3, title: 'Little woman', description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.', genre: 'Fantastic, Adventure', image: test_image2 },
                 {id: 4, title: 'Star Wars: The rise of Skywalker', description: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.', genre: 'Action, drama', image: test_image3 },
             ]}/>  
+            <CinemaHall/>
            </div>
         : <div> AUTH_FALSE </div>
 } 

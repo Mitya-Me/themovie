@@ -1,0 +1,111 @@
+@import '../../styles/variables.scss';
+
+.cinemaHall {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $clr-white;
+    width: 80wh;
+    padding: 5px;
+    position: relative;
+
+    &__seatTags {
+
+        &_list {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 5px;
+        }
+
+        &_item {
+            padding: 10px;
+            background-color: $clr-white;
+            color: black;
+
+            &YouSeat {
+                background-color: lightgreen;
+            }
+
+
+            &Sold {
+                background-color: $clr-grey;
+            }
+
+            &WheelChair {
+                background-color: yellow;
+            }
+
+            &Sofa {
+                background-color: cornflowerblue;
+            }
+                
+        }
+    }
+
+    &__seatSelection {
+        flex: 1 1 auto;
+
+        &_screen {
+            height: 30px;
+            background-color: $clr-white;
+            position: relative;
+            clip-path: polygon(0 0,100% 0,97% 100%,3% 100%);
+
+            &:before {
+                content: 'CINEMA SCREEN';
+                color: $clr-black;
+                position: absolute;
+                font-weight: $fw-light;
+                left: 45%;
+                top: 20%;
+            }
+        }
+
+        &_places {
+            margin-top: 25px;
+            padding-left: 5px;
+        }
+
+        &_row {
+            display: flex;
+            padding: 10px 0;
+        }
+
+        &_rowNumber {
+            flex: 0 1 10%;
+            margin: auto 0;
+        }
+
+        &_seatsRow {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        &_seat {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 1px solid $clr-white;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: $transition;
+
+            &:hover {
+                background-color: $clr-white;
+                box-shadow: 0 0 15px $clr-white;
+            }
+        }
+
+    }
+}
+
+.sofa {
+    width: 60px;
+    border-color: cornflowerblue;
+
+    &:hover {
+        background-color: cornflowerblue;
+        box-shadow: 0 0 15px cornflowerblue;
+    }
+}
