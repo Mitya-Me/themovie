@@ -1,0 +1,16 @@
+export const dates = [
+    {date: 24, month: 'jun', day: 'fri'},
+    {date: 25, month: 'jun', day: 'sat'},
+    {date: 26, month: 'jun', day: 'sun'},
+    {date: 27, month: 'jun', day: 'mon'},
+    {date: 28, month: 'jun', day: 'tue'},
+    {date: 29, month: 'jun', day: 'wed'},
+    {date: 30, month: 'jun', day: 'thu'},
+    {date: 1, month: 'jul', day: 'fri'},
+    {date: 2, month: 'jul', day: 'sat'},
+    {date: 3, month: 'jul', day: 'sun'},
+    {date: 4, month: 'jul', day: 'mon'},
+    {date: 5, month: 'jul', day: 'tue'},
+    {date: 6, month: 'jul', day: 'wed'},
+    {date: 7, month: 'jul', day: 'thu'},
+]
