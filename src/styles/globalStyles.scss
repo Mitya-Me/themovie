@@ -15,8 +15,11 @@
 
 input,
 button,
-textarea {
+textarea,
+span,
+div {
     font-family: inherit;
+    color: inherit;
 }
 
 button {
