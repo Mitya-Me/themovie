@@ -1,6 +1,7 @@
 import styles from "./cinemaHall.module.scss";
 import cn from "classnames";
 import { seats } from "../../mockData/cinemaHallSeats";
+import { UIButton } from "../../ui/uiButton";
 
 export const CinemaHall = () => {
     return (
@@ -34,7 +35,7 @@ export const CinemaHall = () => {
                     ))}
                 </div>
             </div>
-            <button className={styles.cinemaHall__btn}>Next</button>
+            <UIButton text='Next' width='15%' className={styles.cinemaHall__btn}/>
         </div>
     );
 };

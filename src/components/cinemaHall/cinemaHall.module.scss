@@ -9,6 +9,7 @@
     position: relative;
 
     &__seatTags {
+        padding: 2% 0;
 
         &_list {
             display: flex;
@@ -43,6 +44,7 @@
 
     &__seatSelection {
         flex: 1 1 auto;
+        margin-bottom: 1%;
 
         &_screen {
             height: 30px;
@@ -96,7 +98,11 @@
                 box-shadow: 0 0 15px $clr-white;
             }
         }
+    }
 
+    &__btn {
+        align-self: center;
+        margin: 10px 0;
     }
 }
 
