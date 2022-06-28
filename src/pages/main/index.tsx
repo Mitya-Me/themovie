@@ -3,6 +3,7 @@ import { DatePicker } from "../../components/datePicker"
 import { dates } from "../../mockData/datePicker"
 import { movies } from "../../mockData/movies"
 import { EventsList } from "../../components/eventsList"
+import { Features } from "../../components/features"
 
 export const MainPage = () => { 
     const auth = true
@@ -12,6 +13,7 @@ export const MainPage = () => {
             <DatePicker dates={dates}/>
             <Slider movies={movies}/>  
             <EventsList movies={movies}/>
+            <Features/>
            </div>
         : <div> AUTH_FALSE </div>
 } 

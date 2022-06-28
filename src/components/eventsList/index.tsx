@@ -6,8 +6,8 @@ import styles from './eventsList.module.scss'
 export const EventsList = ({movies}: IMovies) => { 
 
     return (
-        <div className={styles.eventsList}>
+        <section className={styles.eventsList}>
             {movies.map(movie => <EventsListItem movie={movie} key={movie.id}/>)}
-        </div>
+        </section>
     )
 } 

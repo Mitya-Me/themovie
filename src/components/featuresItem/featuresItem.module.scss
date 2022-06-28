@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss';
+
+.featureItem {
+    display: flex;
+    height: 400px;
+    background-color: $clr-grey-dark;
+
+    &--reverse {
+        flex-direction: row-reverse;
+
+        & .featureItem__img img {
+            top: -5%;
+            left: -5%;
+        }
+    }
+
+    &__img {
+        flex: 0 1 40%;
+        position: relative;
+        
+        &_wrap {
+            width: 100%;
+            height: 100%;
+            background-color: $clr-black;
+        }
+
+        & img {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        flex: 0 1 60%;
+        padding: 5% 5% 5% 10%;
+        max-height: 90%;
+        overflow: hidden;
+
+        &_title {
+            font-size: $fz-xl;
+            margin-bottom: 5%;
+        }
+
+        &_description {
+            margin-bottom: 5%;
+        }
+    }
+
+}

@@ -17,9 +17,11 @@ input,
 button,
 textarea,
 span,
-div {
+div,
+h1, h2, h3 {
     font-family: inherit;
     color: inherit;
+    background-color: inherit;
 }
 
 button {
