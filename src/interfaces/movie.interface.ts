@@ -1,4 +1,4 @@
-export interface IMovieSlide {
+export interface IMovie {
     id: number;
     title: string;
     description: string;
@@ -6,8 +6,6 @@ export interface IMovieSlide {
     image: string;
 }
 
-export interface ISliderProps {
-    movies: IMovieSlide[]
+export interface IMovies {
+    movies: IMovie[];
 }
-
-

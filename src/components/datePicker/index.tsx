@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { UIButton } from '../../ui/uiButton'
 import styles from './datePicker.module.scss'
 import cn from 'classnames'
 import { IDataPickerProps } from './datePicker.props'

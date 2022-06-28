@@ -1,0 +1,69 @@
+@import '../../styles/variables.scss';
+
+.event {
+    flex: 0 1 30%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid $clr-grey-dark;
+    overflow: hidden;
+    margin: 15px 0;
+    cursor: pointer;
+    position: relative;
+    transition: $transition;
+
+    &:hover {
+        border: 3px solid $clr-black;
+
+        &:after {
+            content: '';
+            position: absolute;
+            height: 254px;
+            width: 100%;
+            background-color: rgba($color: #000000, $alpha: .4);
+        }
+
+        &:before {
+            content: 'FIND OUT MORE';
+            position: absolute;
+            z-index: 2;
+            top: 20%;
+            left: 30%;
+            width: 100%;
+            height: 50%;
+        }
+    }
+
+    &__img {
+        padding: 0 0 70% 0;
+        overflow: hidden;
+        position: relative;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__text {
+        flex: 0 1 65%;
+        padding: 10px 5px;
+        text-align: center;
+        overflow: hidden;
+
+        &_title {
+            font-size: $fz-l;
+            font-weight: $fw-bold;
+        }
+
+        &_genre {
+            font-size: $fz-xs;
+            margin-bottom: 10%;
+        }
+
+        &_description {}
+    }
+}

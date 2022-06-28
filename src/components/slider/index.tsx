@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { ISliderProps } from "./slider.props";
 import styles from "./slider.module.scss";
 import cn from "classnames";
 import { ReactComponent as Arrow } from "../../assets/icons/slider/arrow.svg";
 import { UIButton } from "../../ui/uiButton";
+import { IMovies } from "../../interfaces/movie.interface";
 
-export const Slider = ({ movies }: ISliderProps) => {
+export const Slider = ({ movies }: IMovies) => {
     const [slide, setSlide] = useState<number>(0);
     const [fadeState, setFadeState] = useState<"fade-in" | "fade-out">("fade-in");
     const [currentTimer, setCurrentTimer] = useState<NodeJS.Timeout>();
